@@ -1,5 +1,23 @@
 # README
 
+Trello: https://trello.com/b/W4y5Pa9D/project-2-dota-blog
+
+Github: https://github.com/johnlee94/wdi_project2_dota
+
+Approach taken:
+
+Technologies used: ruby, rails, js, css, html, postgresql, heroku, gems
+
+Installation Instructions:
+
+WireFrames!:
+
+
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
