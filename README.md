@@ -12,31 +12,10 @@ Installation Instructions:
 
 WireFrames!:
 
+![![img](file:///home/john/Downloads/16930987_1407074909362554_635375076_o.jpg?lastModify=1487954820)16930987_1407074909362554_635375076_o](/home/john/Downloads/16930987_1407074909362554_635375076_o.jpg)
 
 
 
 
 
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* ![16935643_1407074842695894_354556589_o](/home/john/Downloads/16935448_1407074632695915_1157094305_o.jpg)![16990756_1407074876029224_77443936_o](/home/john/Downloads/16990756_1407074876029224_77443936_o.jpg)
