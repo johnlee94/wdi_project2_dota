@@ -1,0 +1,30 @@
+HOME PAGE FOR POSTS
+
+
+<h1>WDI Blog</h1>
+
+
+<p>
+  Welcome to the Dota Junkie blog. POST AWAY!
+</p>
+
+<hr>
+
+<% @posts.each do |post| %>
+  <!-- <h2><%=post.title %></h2> -->
+  <h2><%= link_to post.title, post_path(post) %></h2>
+  Posted <%= time_ago_in_words(post.created_at) %> ago <%= "by #{post.user.username}" %>
+
+
+  <p>
+    <div>
+      <%# image_tag post.image_url, width: '500px' if post.image_url.present? %>
+    </div>
+    <%# post.content %>
+  </p>
+  <hr>
+<% end %>
+
+<% if current_user %>
+<%= link_to 'New Post', new_post_path %>
+<%end%>

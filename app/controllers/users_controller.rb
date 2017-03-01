@@ -1,4 +1,19 @@
 class UsersController < ApplicationController
+  def index
+    @posts = Post.all
+  end
+
+  #FIrst, make profiles model, create relationship (user has one profile)
+  # def show
+  #   @user = User.find(params[:id])
+  #   @profile = @user.profile
+  # end
+
+  def user_posts
+    @user = current_user
+    @posts = @user.posts
+  end
+
   def new
     @user = User.new
   end
@@ -16,7 +31,7 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       # If user fails model validation - probably a bad password or duplicate email:
-      flash.now.alert = "Oops, couldn't create account. Please make sure you are using a valid email and password and try again."
+      flash.now.alert = "Oops, couldn't create account. Please make sure you are using a unique username, valid email and password. Then try again."
       render :new
     end
   end

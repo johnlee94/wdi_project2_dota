@@ -1,0 +1,13 @@
+<h1>DOTAJUNKIE</h2>
+ <p>a community-driven forums website made by a dota player, for dota players.</p>
+
+
+<% if current_user %>
+  <h2>Welcome back!</h2>
+  <%=link_to('Continue to site!', posts_path) %>
+<% else %>
+  <h2>Welcome!</h2>
+  <%=link_to('Login', login_path(@user)) %> |
+  <%=link_to('Sign up', new_user_path(@user)) %> |
+  <%=link_to('Continue to site!', posts_path) %>
+<% end%>
