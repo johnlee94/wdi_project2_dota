@@ -13,7 +13,7 @@ HOME PAGE FOR POSTS
 <% @posts.each do |post| %>
   <!-- <h2><%=post.title %></h2> -->
   <h2><%= link_to post.title, post_path(post) %></h2>
-  Posted <%= time_ago_in_words(post.created_at) %> ago <%= "by #{post.user.username}" %>
+  Posted <%= time_ago_in_words(post.created_at) %> ago by <%= link_to post.user.username, user_path %>
 
 
   <p>

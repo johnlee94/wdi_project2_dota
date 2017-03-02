@@ -3,7 +3,14 @@ Rails.application.routes.draw do
   # resources :users do
   #   resources :posts
   # end
-  resources :posts
+  # patch 'posts/:post_id/comments/:id' => 'comments#update'
+  # delete 'posts/:post_id/comments/:id' => 'comments#destroy'
+  # get 'posts/:post_id/comments' => 'comments#show', as: :comments
+  # post 'posts/:post_id/comments' => 'comments#create', as: :new_comment
+
+  resources :posts do
+    resources :comments, except: [:index]
+  end
 
   # sign up page with form:
   get 'users/posts' => 'users#user_posts', as: :user

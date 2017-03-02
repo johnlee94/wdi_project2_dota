@@ -21,3 +21,8 @@ Posted <%= time_ago_in_words(@post.created_at) %> ago by <%= link_to @post.user.
 <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
 <%end%>
 <%# link_to 'Back', posts_path %>
+
+<br>
+
+<!-- <%= render 'comments/view' %> -->
+<%= render 'comments/form'%>

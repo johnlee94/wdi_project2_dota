@@ -1,0 +1,21 @@
+<div>
+  <% @post.comments.each do |comment| %>
+
+    <h6><%= link_to comment.user.username, user_path(comment.user) %> commented <%= time_ago_in_words(comment.created_at) %> ago: </h6>
+    <div style="border:solid 1px black;margin-top:none">
+    <%= comment.content %>
+    <% if current_user == comment.user %>
+    <%= link_to 'Delete', post_comment_path(@post, comment), method: :delete%> |
+      <%= link_to 'Edit', post_comment_path(@post, comment), method: :patch %>
+    <%end%>
+    </div>
+  <% end %>
+</div>
+
+<br>
+
+New Comment:
+<%= form_for [@post, @comment] do |f| %>
+  <%= f.text_area :content %>
+  <%= f.submit %>
+<% end %>
