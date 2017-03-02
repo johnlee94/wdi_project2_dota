@@ -1,13 +1,27 @@
-<h1>DOTAJUNKIE</h2>
- <p>a community-driven forums website made by a dota player, for dota players.</p>
 
 
 <% if current_user %>
-  <h2>Welcome back!</h2>
-  <%=link_to('Continue to site!', posts_path) %>
+<div class="container">
+ <div class="jumbotron" id="welcome">
+  <h1>Welcome Back!</h1>
+  <br>
+  <br>
+  <!-- <p>DotaJunkie: A community-driven forums website made by a dota player, for dota players.</p> -->
+  <p><a class="btn btn-primary btn-lg" href="/users/posts" role="button">Continue to Site!</a></p>
+</div>
+</div>
+
 <% else %>
-  <h2>Welcome!</h2>
-  <%=link_to('Login', login_path(@user)) %> |
-  <%=link_to('Sign up', new_user_path(@user)) %> |
-  <%=link_to('Continue to site!', posts_path) %>
+
+<div class="container">
+ <div class="jumbotron" id="welcome">
+  <h1>DOTAJUNKIE</h1>
+  <p>A community-driven forums website made by a dota player, for dota players.</p>
+  <p><a class="btn btn-primary btn-lg" href="/users/new" role="button">Join</a></p>
+</div>
+
+<!-- <h2>Welcome!</h2>
+<%#link_to('Login', login_path(@user)) %> |
+<%#link_to('Sign up', new_user_path(@user)) %> |
+<%#link_to('Continue to site!', posts_path) %> -->
 <% end%>

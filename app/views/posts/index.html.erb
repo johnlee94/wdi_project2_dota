@@ -1,19 +1,26 @@
-HOME PAGE FOR POSTS
+<h1>DotaJunkie</h1>
 
-
-<h1>WDI Blog</h1>
-
-
-<p>
-  Welcome to the Dota Junkie blog. POST AWAY!
-</p>
-
-<hr>
+<!-- <div id="DotaImageHeader"> -->
+<!-- <img src="http://cdn.dota2.com/apps/dota2/images/blogfiles/bg_thebetaisover.jpg" alt="Dota Official" id="mainDotaImage"> -->
+<!-- </div> -->
 
 <% @posts.each do |post| %>
   <!-- <h2><%=post.title %></h2> -->
   <h2><%= link_to post.title, post_path(post) %></h2>
+
   Posted <%= time_ago_in_words(post.created_at) %> ago by <%= link_to post.user.username, user_path %>
+
+
+  <!-- #stretchgoal: add upvote function -->
+  <%# if (current_user.voted_for? post) == false %>
+  <%# button_to "Upvote!",  :onclick => post.liked_by(current_user) %>
+  <%# button_to "Downvote.", :onclick => post.downvote_from(current_user) %>
+  <%# end %>
+<!--
+  Upvotes : <%# post.get_upvotes.size %>
+  Downvotes : <%# post.get_downvotes.size %>
+  <br> -->
+
 
 
   <p>
