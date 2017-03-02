@@ -3,9 +3,14 @@
 <h1>
   <!-- <strong>Title:</strong> -->
   <strong><%= @post.title %></strong>
+
+  <!-- #coming soon: upvote function -->
+  <!-- Upvotes : <%# @post.get_upvotes.size %>
+  Downvotes : <%# @post.get_downvotes.size %>
+   -->
 </h1>
 
-Posted <%= time_ago_in_words(@post.created_at) %> ago by <%= link_to @post.user.username, user_path(@post.user) %>
+  Posted <%= time_ago_in_words(@post.created_at) %> ago by <%= link_to @post.user.username, user_path(@post.user) %>
 
 <br>
 <br>

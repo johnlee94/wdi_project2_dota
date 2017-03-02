@@ -13,9 +13,36 @@
  *= require_tree .
  *= require_self
  */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootswatch/cyborg/variables";
+@import "bootstrap";
+@import "bootswatch/cyborg/bootswatch";
 
- // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
- @import "bootstrap-sprockets";
- @import "bootswatch/cosmo/variables";
- @import "bootstrap";
- @import "bootswatch/cosmo/bootswatch";
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+#brandspace {
+    padding: 0 !important;
+}
+
+#mainDotaImage {
+    width: 50%;
+    height: 50%;
+}
+
+#DotaImageHeader {
+    background-image: url(http://cdn.dota2.com/apps/dota2/images/blogfiles/bg_thebetaisover.jpg);
+    // background-image: url(http://i.imgur.com/Kgy8F.jpg);
+    width: 100%;
+    height: 292px;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-size: cover;
+    margin-top: 0px;
+}
+// #navRight {
+//   float: right;
+// }

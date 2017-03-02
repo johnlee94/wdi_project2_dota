@@ -1,0 +1,6 @@
+<% @post.comments.each do |comment| %>
+Posted <%= time_ago_in_words(comment.created_at) %> ago by <%= link_to comment.user.username, user_path(@comment.user) %>
+<div>
+  <%=comment.content  %>
+</div>
+<% end %>

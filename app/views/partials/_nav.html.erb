@@ -8,17 +8,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">DotaJunkie</a>
+      <a class="navbar-brand" id="brandspace" href="#">
+        <img alt="DotaJunkie" id="logo" src="https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4.jpg">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!-- use js/jquery to dom get url, and then set it into the current -->
-        <li class="active"><a href="#">CURRENT<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">DotaJunkie<span class="sr-only">(current)</span></a></li>
         <li><a href="/posts">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <!-- more dropdown menus, links, search function to come! -->
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Coming Soon <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -28,15 +31,15 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
-      <form class="navbar-form navbar-left">
+      <!-- <form class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search (Coming Soon)">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
+      </form> -->
+      <ul id="navRight" class="nav navbar-nav navbar-right">
         <% if current_user %>
         <li><a href="#"></a></li>
         <li class="dropdown">
@@ -44,7 +47,7 @@
           <ul class="dropdown-menu">
             <li><a href="#"><%= "#{current_user.username}'s Profile" %></a></li>
             <li><%= link_to 'My Posts', user_path %></li>
-            <li><a href="posts/new">New Post</a></li>
+            <li><a href="#"><%= link_to 'New Post', new_post_path %></a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#"><%= link_to 'Log Out', logout_path, method: :delete %></a></li>
           </ul>
