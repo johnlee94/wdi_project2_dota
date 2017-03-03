@@ -5,9 +5,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(username: params[:login][:username].downcase)
+    user = User.find_by(username: params[:username].downcase)
 
-    if user && user.authenticate(params[:login][:password])
+    if user && user.authenticate(params[:password])
       session[:user_id] = user.id.to_s
       redirect_to posts_path, notice: 'Successfully logged in!'
     else

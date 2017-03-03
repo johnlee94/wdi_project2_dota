@@ -2,7 +2,7 @@
   <% @post.comments.each do |comment| %>
 
     <h6><%= link_to comment.user.username, user_path(comment.user) %> commented <%= time_ago_in_words(comment.created_at) %> ago: </h6>
-    <div style="border:solid 1px black;margin-top:none">
+    <div style="border:solid 1px white;margin-top:none">
 
       <!-- #coming soon: Upvote function -->
       <!-- Upvotes : <%# comment.get_upvotes.size %>
