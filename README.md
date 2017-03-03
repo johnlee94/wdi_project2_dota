@@ -20,7 +20,7 @@ Clone the repo into your local workspace. Bundle install the necessary gems. Mak
 
 **ERD:**
 
-![img](file:///home/john/ga/code_projects/2_project/dota_blog/assets/16930987_1407074909362554_635375076_o.jpg?lastModify=1488503256)
+![img](assets/16930987_1407074909362554_635375076_o.jpg?lastModify=1488503256)
 
 
 
