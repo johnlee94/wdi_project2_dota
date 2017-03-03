@@ -6,17 +6,29 @@ Github: https://github.com/johnlee94/wdi_project2_dota
 
 Heroku: 	https://dota-project.herokuapp.com/
 
-Approach taken:
+**Approach taken**:	
 
-Technologies used: ruby, rails, js, css, html, postgresql, heroku, gems
+Set up my ERD initially (Users, Posts, Comments). Generated the models into the db and then built the relationships. Added features as I saw fit or needed (Authentication, Authorization, navbar, etc). Added bootstrap/bootswatch for styling purposes.
 
-Installation Instructions:
+**Technologies used:** 
 
-WireFrames!:
+ruby 2.3.1, rails 5.1, js, css, html, postgresql, heroku, gems (bootstrap, bootswatch, bcrypt)
+
+Installation Instructions:**
+
+Clone the repo into your local workspace. Bundle install the necessary gems. Make sure you have a modern-enough rails and ruby versions as well. Then render app in preferred browser.
+
+**ERD:**
+
+![img](file:///home/john/ga/code_projects/2_project/dota_blog/assets/16930987_1407074909362554_635375076_o.jpg?lastModify=1488503256)
+
+
+
+**WireFrames!:**
 
 ![16930752_1407074692695909_809667548_o](assets/16930752_1407074692695909_809667548_o.jpg)
 
-![16930987_1407074909362554_635375076_o](assets/16930987_1407074909362554_635375076_o.jpg)
+
 
 ![16935448_1407074632695915_1157094305_o](assets/16935448_1407074632695915_1157094305_o.jpg)
 
