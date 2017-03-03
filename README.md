@@ -40,4 +40,36 @@ Clone the repo into your local workspace. Bundle install the necessary gems. Mak
 
 ![16990265_1407074736029238_6001549_o (1)](assets/16990265_1407074736029238_6001549_o (1).jpg)
 
+
+
 ![16990756_1407074876029224_77443936_o](assets/16990756_1407074876029224_77443936_o.jpg)
+
+
+
+**Known Bugs:**
+
+Comment can be created,read, and deleted but not updated. (Want to add an editor for the comment in future so you dont need a view page for comment/:id/edit)
+
+Most actions like (posting, commenting) can only be accessible when logged in. Bugs out when it happens instead of giving notice of problem :(
+
+
+
+**Coming Soon:**
+
+More links, search function
+
+Profile model to user model
+
+Reply model to comment model
+
+Able to upload images/files to posts
+
+Upvote/Like system
+
+User notified when post is liked or commented on
+
+DM system
+
+Admin Function
+
+The possibilities are endless!
